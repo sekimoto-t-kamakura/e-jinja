@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* エリア一覧 */
+.area-section {
+    height: 254px;
+}
+.container {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container__area,
+.container__prefecture {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0 10px 10px;
+    color: var(--main-color);
+    font-weight: bold;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+/* 都道府県 */
+.h2-back-button{
+    float: right;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--link-color);
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.prefecture-container {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.prefecture-container li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* 市区町村 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80vh; /* 画面高さの80%までに制限 */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-close {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.modal-body {
+    overflow-y: auto; /* 縦スクロールを有効化 */
+    flex-grow: 1; /* 残りのスペースを占有 */
+    margin-top: 10px;
+}
+
+.modal-list {
+    padding-top: 5px;
+}
+.modal-link {
+    padding-top: 5px;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+
+/* コラム集 */
+.about {
+    margin-top: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+.about__list {
+    padding: 10px 0 10px 10px;
+}
+
+.about__list-border {
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+.about__link {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: underline;
+}

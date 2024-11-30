@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* エリアと条件の絞り込み */
+.filter {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.filter__area-box,
+.filter__condition-box {
+    display: flex;
+    align-items: center;
+    padding: 11px 0;
+    background-color: var(--main-color);
+}
+
+.filter__area-box {
+    border-radius:5px 5px 0 0;
+}
+
+.filter__condition-box {
+    border-radius:0 0 5px 5px;
+}
+
+.filter__key {
+    min-width: 54px;
+    padding-left: 10px;
+    text-align: center;
+    color: var(--white);
+}
+
+.filter__value {
+    padding-left: 10px ;
+    background-color: var(--white);
+}
+
+/* リスト */
+.city-lists {
+    margin: 10px 0;
+}
